@@ -6,6 +6,7 @@ import React from 'react';
 import PythonImg from '../assets/Python.JPG';
 import JavaImg from '../assets/Java.JPG';
 import FireBase from '../assets/firebase.png';
+import Mobile from '../assets/Flutter-Kt.JPG';
 import GitHub from '../assets/github.png';
 import PHP from '../assets/PHP.JPG';
 import Mongo from '../assets/mongo.png';
@@ -40,6 +41,10 @@ const Skills = () => {
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
             <img className='w-20 mx-auto' src={ReactNode} alt='HTML icon'/>
             <p className='my-4'>REACTJS + Node</p>
+            </div>
+            <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+            <img className='w-20 mx-auto' src={Mobile} alt='HTML icon'/>
+            <p className='my-4'>Flutter/Kotlin</p>
             </div>
             <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
             <img className='w-20 mx-auto' src={PythonImg} alt='HTML icon'/>
