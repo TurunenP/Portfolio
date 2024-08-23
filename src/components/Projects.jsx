@@ -133,7 +133,9 @@ const Projects = () => {
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font bold text-white tracking-wider">
-                University of Oulu: Robotics Lab Inventory System
+                                <p className="text-[18px]">
+                  University of Oulu: Robotics Lab Inventory System
+                </p>
               </span>
               <div className="pt-8 text-center">
                 <a href="https://robo-lend-lab-equipment-inventory-system.vercel.app/">
