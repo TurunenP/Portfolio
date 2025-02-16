@@ -1,7 +1,7 @@
 import React from 'react';
 import Little from '../assets/projects/Lemon.JPG';
 import elegantShoes from '../assets/projects/elegantShoes.JPG';
-import Robotics from '../assets/projects/RoboLab.JPG';
+import Robotics from '../assets/projects/LabInventory.JPG';
 import tastyEats from '../assets/projects/tastyEats.JPG';
 import crypto from '../assets/projects/crypto.JPG';
 
@@ -9,11 +9,18 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="w-full md:h-screen text-gray-300 bg-[#0a192f] pt-0"
+      className="w-full md:h-screen text-gray-300 bg-[#0a192f] "
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+        <div className="pb-6 mt-20">
+          {/* <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
+            Projects
+          </p> */}
+
+          <p
+            style={{ zIndex: 50, visibility: "visible", position: "relative" }}
+            className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600"
+          >
             Projects
           </p>
 
@@ -138,6 +145,26 @@ const Projects = () => {
                 </p>
               </span>
               <div className="pt-8 text-center">
+                <a href="https://robo-lab-system.netlify.app/">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://github.com/TurunenP/Updated-Inventory">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Github
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            {/* <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-2xl font bold text-white tracking-wider">
+                <p className="text-[18px]">
+                  University of Oulu: Robotics Lab Inventory System
+                </p>
+              </span>
+              <div className="pt-8 text-center">
                 <a href="https://robo-lend-lab-equipment-inventory-system.vercel.app/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
@@ -149,7 +176,7 @@ const Projects = () => {
                   </button>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
