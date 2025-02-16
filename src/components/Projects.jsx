@@ -4,6 +4,7 @@ import elegantShoes from '../assets/projects/elegantShoes.JPG';
 import Robotics from '../assets/projects/LabInventory.JPG';
 import tastyEats from '../assets/projects/tastyEats.JPG';
 import crypto from '../assets/projects/crypto.JPG';
+import Footer from './Footer';
 
 const Projects = () => {
   return (
@@ -12,7 +13,7 @@ const Projects = () => {
       className="w-full md:h-screen text-gray-300 bg-[#0a192f] "
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-6 mt-20">
+        <div className="pb-6 mt-20 ">
           {/* <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
             Projects
           </p> */}
@@ -178,6 +179,12 @@ const Projects = () => {
               </div>
             </div> */}
           </div>
+        </div>
+        <div
+          // className="pt-20 md:pt-12 lg:pt-20"
+          className="pt-20 md:pt-12 lg:pt-12"
+        >
+          <Footer />
         </div>
       </div>
     </div>

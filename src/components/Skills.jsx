@@ -9,6 +9,7 @@ import Mongo from '../assets/mongo.png';
 import JS from '../assets/HTMLCSSJS.png';
 import ReactNode from '../assets/ReactNode.JPG';
 import Material from '../assets/Material UI.JPG';
+import Footer from './Footer';
 
 const Skills = () => {
   return (
@@ -38,11 +39,7 @@ const Skills = () => {
             <p className="my-4 ">HTML, CSS & JS</p>
           </div>
           <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
-            <img
-              className="w-20  mx-auto"
-              src={ReactNode}
-              alt="HTML icon"
-            />
+            <img className="w-20  mx-auto" src={ReactNode} alt="HTML icon" />
             <p className="my-4 ">REACTJS + Node</p>
             <p className="my-4 ">REACT NATIVE</p>
           </div>
@@ -79,6 +76,9 @@ const Skills = () => {
             <img className="w-20 h-20 mx-auto" src={GitHub} alt="HTML icon" />
             <p className="my-4">GIT & GITHUB</p>
           </div>
+        </div>
+        <div className="pt-20 md:pt-12 lg:pt-12">
+          <Footer />
         </div>
       </div>
     </div>

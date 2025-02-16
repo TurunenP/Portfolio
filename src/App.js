@@ -29,12 +29,13 @@ import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("about"); // Track the active section
 
   return (
-    <div>
+    <div className="scroll-smooth">
       {/* Pass setActiveSection to Navbar so it can update the active section */}
       <Navbar setActiveSection={setActiveSection} />
 
@@ -44,6 +45,7 @@ const App = () => {
       {activeSection === "projects" && <Projects />}
       {activeSection === "contact" && <Contact />}
       {/* Add more sections like Projects, Contact as needed */}
+      {/* <Footer /> */}
     </div>
   );
 };
