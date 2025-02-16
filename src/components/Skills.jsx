@@ -32,7 +32,7 @@ const Skills = () => {
           </p>
         </div>
         {/* Icons Container */}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-6">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-6 h-16">
           <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
             <img className="w-24 mx-auto" src={JS} alt="HTML icon" />
             <p className="my-4 pb-12">HTML, CSS & JS</p>
