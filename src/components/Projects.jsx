@@ -28,7 +28,7 @@ const Projects = () => {
           <p className="py-4 text-xl">Check out some of my school projects:</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-2">
           <div
             style={{ backgroundImage: `url(${elegantShoes})` }}
             className=" h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
@@ -180,12 +180,6 @@ const Projects = () => {
             </div> */}
           </div>
         </div>
-        {/* <div
-          // className="pt-20 md:pt-12 lg:pt-20"
-          className="pt-20 md:pt-12 lg:pt-12"
-        >
-          <Footer />
-        </div> */}
       </div>
     </div>
   );
