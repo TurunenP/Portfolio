@@ -32,47 +32,51 @@ const Skills = () => {
           </p>
         </div>
         {/* Icons Container */}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-6 h-16">
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-4 text-center py-6">
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
             <img className="w-24 mx-auto" src={JS} alt="HTML icon" />
-            <p className="my-4 pb-12">HTML, CSS & JS</p>
+            <p className="my-4 ">HTML, CSS & JS</p>
           </div>
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
-            <img className="w-24 mx-auto" src={ReactNode} alt="HTML icon" />
-            <p className="my-4">REACTJS + Node</p>
-            <p className="my-4">REACT NATIVE</p>
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
+            <img
+              className="w-20  mx-auto"
+              src={ReactNode}
+              alt="HTML icon"
+            />
+            <p className="my-4 ">REACTJS + Node</p>
+            <p className="my-4 ">REACT NATIVE</p>
           </div>
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
             <img className="w-24 mx-auto" src={Material} alt="HTML icon" />
             <p className="my-4">Material ui</p>
           </div>
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
             <img className="w-24 mx-auto" src={Mobile} alt="HTML icon" />
             <p className="my-4">Flutter/Kotlin</p>
           </div>
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
             <img className="w-24 mx-auto" src={PythonImg} alt="HTML icon" />
             <p className="my-4">PYTHON</p>
           </div>
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
-            <img className="w-24 mx-auto" src={JavaImg} alt="HTML icon" />
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
+            <img className="w-20 h-20 mx-auto" src={JavaImg} alt="HTML icon" />
             <p className="my-4">JAVA</p>
           </div>
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
-            <img className="w-24 mx-auto" src={FireBase} alt="HTML icon" />
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
+            <img className="w-20 h-20 mx-auto" src={FireBase} alt="HTML icon" />
             <p className="my-4">FIREBASE</p>
           </div>
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
             <img className="w-24 mx-auto" src={PHP} alt="HTML icon" />
             <p className="my-4">PHP & MYSQL</p>
           </div>
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
-            <img className="w-24 mx-auto" src={Mongo} alt="HTML icon" />
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
+            <img className="w-20 h-20 mx-auto" src={Mongo} alt="HTML icon" />
             <p className="my-4">MONGO DB</p>
           </div>
           {/* <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500"> */}
-          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500">
-            <img className="w-24 mx-auto" src={GitHub} alt="HTML icon" />
+          <div className="shadow-md shadow-[#474c52] hover:scale-110 duration-500 h-[8rem]">
+            <img className="w-20 h-20 mx-auto" src={GitHub} alt="HTML icon" />
             <p className="my-4">GIT & GITHUB</p>
           </div>
         </div>
