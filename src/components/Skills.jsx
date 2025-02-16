@@ -77,9 +77,9 @@ const Skills = () => {
             <p className="my-4">GIT & GITHUB</p>
           </div>
         </div>
-        <div className="pt-20 md:pt-12 lg:pt-12">
+        {/* <div className="pt-20 md:pt-12 lg:pt-12">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </div>
   );

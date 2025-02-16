@@ -30,9 +30,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="pt-12 md:pt-32 lg:pt-80">
+        {/* <div className="pt-12 md:pt-32 lg:pt-80">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </div>
   );

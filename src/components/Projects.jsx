@@ -180,12 +180,12 @@ const Projects = () => {
             </div> */}
           </div>
         </div>
-        <div
+        {/* <div
           // className="pt-20 md:pt-12 lg:pt-20"
           className="pt-20 md:pt-12 lg:pt-12"
         >
           <Footer />
-        </div>
+        </div> */}
       </div>
     </div>
   );

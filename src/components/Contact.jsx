@@ -100,7 +100,7 @@ const Contact = () => {
       </form>
 
       {/* Footer Section */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
