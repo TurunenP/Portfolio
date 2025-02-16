@@ -30,7 +30,7 @@ const Projects = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div
             style={{ backgroundImage: `url(${elegantShoes})` }}
-            className=" h-[200px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className=" h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font bold text-white tracking-wider">
@@ -61,7 +61,7 @@ const Projects = () => {
 
           <div
             style={{ backgroundImage: `url(${crypto})` }}
-            className=" h-[200px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className=" h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font bold text-white tracking-wider">
@@ -92,7 +92,7 @@ const Projects = () => {
 
           <div
             style={{ backgroundImage: `url(${tastyEats})` }}
-            className=" h-[200px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className=" h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font bold text-white tracking-wider">
@@ -115,7 +115,7 @@ const Projects = () => {
 
           <div
             style={{ backgroundImage: `url(${Little})` }}
-            className=" h-[200px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className=" h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font bold text-white tracking-wider">
@@ -136,7 +136,7 @@ const Projects = () => {
 
           <div
             style={{ backgroundImage: `url(${Robotics})` }}
-            className=" h-[200px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className=" h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font bold text-white tracking-wider">
