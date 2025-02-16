@@ -143,6 +143,7 @@ const Projects = () => {
               <span className="text-2xl font bold text-white tracking-wider">
                 <p className="text-[18px]">
                   University of Oulu: Robotics Lab Inventory System
+                  <p className="text-yellow-500">(OnGoing)</p>
                 </p>
               </span>
               <div className="pt-8 text-center">
