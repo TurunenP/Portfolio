@@ -17,7 +17,7 @@ const Projects = () => {
             Projects
           </p>
 
-          <p className="py-2">Check out some of my school projects</p>
+          <p className="py-4 text-xl">Check out some of my school projects:</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">

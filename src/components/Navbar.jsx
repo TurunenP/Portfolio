@@ -179,16 +179,21 @@ const Navbar = ({ setActiveSection }) => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
-   
-        <img
-          src={Logo}
-          alt="LogoImage"
-          style={{
-            width: "70px",
-            borderRadius: "10px",
-            marginTop: "10px",
-          }}
-        />
+        <a
+          href="https://github.com/TurunenP"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={Logo}
+            alt="LogoImage"
+            style={{
+              width: "70px",
+              borderRadius: "10px",
+              marginTop: "10px",
+            }}
+          />
+        </a>
       </div>
 
       {/* Menu */}
