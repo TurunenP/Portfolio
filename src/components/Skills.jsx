@@ -18,7 +18,7 @@ const Skills = () => {
     // >
     <div
       name="skills"
-      className="w-full h-[120vh] bg-[#0a192f] text-gray-300 pt-0"
+      className="w-full h-[100vh] bg-[#0a192f] text-gray-300 pt-0"
     >
       {/* <div name="skills" className="w-full bg-[#0a192f] text-gray-300 pt-32"> */}
       {/* Container */}
