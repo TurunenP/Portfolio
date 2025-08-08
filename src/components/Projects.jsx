@@ -35,7 +35,7 @@ const Projects = () => {
               </span>
               <div className="pt-8 text-center">
                 <a
-                  href="https://updated-inventory.vercel.app/"
+                  href="https://github.com/TurunenP/Updated-Inventory"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -44,7 +44,7 @@ const Projects = () => {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/TurunenP/Updated-Inventory"
+                  href="https://github.com/TurunenP/Updated-Inventory.git"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -55,7 +55,6 @@ const Projects = () => {
               </div>
             </div>
           </div>
-
           <div
             style={{ backgroundImage: `url(${elegantShoes})` }}
             className="h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
