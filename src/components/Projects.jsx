@@ -3,7 +3,7 @@ import Little from "../assets/projects/Lemon.JPG";
 import elegantShoes from "../assets/projects/elegantShoes.JPG";
 import tastyEats from "../assets/projects/tastyEats.JPG";
 import crypto from "../assets/projects/crypto.JPG";
-import Robotics from "../assets/projects/Lab.png"; // Use the correct image path you want
+//import Robotics from "../assets/projects/Lab.png"; // Use the correct image path you want
 import Lab from "../assets/projects/Lab.png"; // Looks like same as Robotics? Remove if duplicate
 import Footer from "./Footer";
 
