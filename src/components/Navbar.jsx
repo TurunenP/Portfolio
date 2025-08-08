@@ -156,7 +156,6 @@
 
 // export default Navbar;
 
-
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";

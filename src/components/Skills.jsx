@@ -1,15 +1,15 @@
-import React from 'react';
-import PythonImg from '../assets/Python.JPG';
-import JavaImg from '../assets/Java.JPG';
-import FireBase from '../assets/firebase.png';
-import Mobile from '../assets/Flutter-Kt.JPG';
-import GitHub from '../assets/github.png';
-import PHP from '../assets/PHP.JPG';
-import Mongo from '../assets/mongo.png';
-import JS from '../assets/HTMLCSSJS.png';
-import ReactNode from '../assets/ReactNode.JPG';
-import Material from '../assets/Material UI.JPG';
-import Footer from './Footer';
+import React from "react";
+import PythonImg from "../assets/Python.JPG";
+import JavaImg from "../assets/Java.JPG";
+import FireBase from "../assets/firebase.png";
+import Mobile from "../assets/Flutter-Kt.JPG";
+import GitHub from "../assets/github.png";
+import PHP from "../assets/PHP.JPG";
+import Mongo from "../assets/mongo.png";
+import JS from "../assets/HTMLCSSJS.png";
+import ReactNode from "../assets/ReactNode.JPG";
+import Material from "../assets/Material UI.JPG";
+import Footer from "./Footer";
 
 const Skills = () => {
   return (
@@ -20,6 +20,7 @@ const Skills = () => {
     <div
       name="skills"
       className="w-full h-[100vh] bg-[#0a192f] text-gray-300 pt-0"
+      // className="w-full min-h-screen bg-[#0a192f] text-gray-300 pt-0"
     >
       {/* <div name="skills" className="w-full bg-[#0a192f] text-gray-300 pt-32"> */}
       {/* Container */}
@@ -77,9 +78,6 @@ const Skills = () => {
             <p className="my-4">GIT & GITHUB</p>
           </div>
         </div>
-        {/* <div className="pt-20 md:pt-12 lg:pt-12">
-          <Footer />
-        </div> */}
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const Projects = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-2">
           <div
             style={{ backgroundImage: `url(${Lab})` }}
-            className="h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className="h-[220px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -35,7 +35,7 @@ const Projects = () => {
               </span>
               <div className="pt-8 text-center">
                 <a
-                  href="https://github.com/TurunenP/Updated-Inventory"
+                  href="https://updated-inventory.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -57,7 +57,7 @@ const Projects = () => {
           </div>
           <div
             style={{ backgroundImage: `url(${elegantShoes})` }}
-            className="h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className="h-[220px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -88,7 +88,7 @@ const Projects = () => {
 
           <div
             style={{ backgroundImage: `url(${crypto})` }}
-            className="h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className="h-[220px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -119,7 +119,7 @@ const Projects = () => {
 
           <div
             style={{ backgroundImage: `url(${tastyEats})` }}
-            className="h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className="h-[220px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -150,7 +150,7 @@ const Projects = () => {
 
           <div
             style={{ backgroundImage: `url(${Little})` }}
-            className="h-[180px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
+            className="h-[220px] shadow-lg shadow-[#040c16] group container rounded-md flex justify-center text-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
