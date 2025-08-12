@@ -16,4 +16,4 @@ A personal portfolio website showcasing projects and experience with a clean, re
 3. Run locally: `npm start`
 
 ## Why It Matters
-This project serves as a central hub for presenting my work, aligning perfectly with my current goals in web and AI-assisted development.
+This project serves as a central hub for showcasing my work and web development skills, with a focus on responsive design and modern JavaScript frameworks.
