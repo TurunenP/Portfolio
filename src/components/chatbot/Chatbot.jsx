@@ -16,7 +16,7 @@ function normalizeText(text) {
     .trim();
 }
 
-const Chatbot = () => {
+const Chatbot = ({ height = "450px" }) => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -236,3 +236,215 @@ const Chatbot = () => {
 };
 
 export default Chatbot;
+
+// import React, { useState, useEffect, useRef } from "react";
+// import responses from "./responses.json";
+
+// function escapeRegExp(string) {
+//   return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+// }
+
+// function normalizeText(text) {
+//   if (!text) return "";
+//   return text
+//     .toString()
+//     .toLowerCase()
+//     .replace(/[^\w\s]/gi, "")
+//     .replace(/\s+/g, " ")
+//     .trim();
+// }
+
+// const Chatbot = ({ height = "500px" }) => {
+//   const [messages, setMessages] = useState([]);
+//   const [input, setInput] = useState("");
+//   const [loading, setLoading] = useState(false);
+//   const messagesEndRef = useRef(null);
+
+//   useEffect(() => {
+//     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+//   }, [messages]);
+
+//   useEffect(() => {
+//     setMessages([
+//       {
+//         from: "bot",
+//         text: "👋 Hi! I’m your AI portfolio guide. Ask me about projects, skills, thesis, AI demo, or career questions 🚀",
+//       },
+//     ]);
+//   }, []);
+
+//   async function getAIResponse(prompt) {
+//     try {
+//       const res = await fetch(
+//         "https://api-inference.huggingface.co/models/EleutherAI/gpt-j-6B",
+//         {
+//           method: "POST",
+//           headers: {
+//             Authorization: `Bearer ${process.env.REACT_APP_HF_API_KEY}`,
+//             "Content-Type": "application/json",
+//           },
+//           body: JSON.stringify({ inputs: prompt }),
+//         }
+//       );
+//       if (!res.ok) throw new Error("API error");
+//       const data = await res.json();
+//       if (Array.isArray(data) && data[0]?.generated_text)
+//         return data[0].generated_text;
+//       if (data.generated_text) return data.generated_text;
+//       return null;
+//     } catch (err) {
+//       console.warn("AI API failed, falling back to JSON:", err.message);
+//       return null;
+//     }
+//   }
+
+//   function getLocalResponse(userInput) {
+//     const normalizedInput = normalizeText(userInput);
+//     const candidates = [];
+//     responses.forEach((r) => {
+//       const ans = r.answer;
+//       if (Array.isArray(r.question)) {
+//         r.question.forEach((q) => {
+//           candidates.push({ text: normalizeText(q), answer: ans });
+//         });
+//       } else if (typeof r.question === "string") {
+//         candidates.push({ text: normalizeText(r.question), answer: ans });
+//       }
+//     });
+
+//     candidates.sort((a, b) => b.text.length - a.text.length);
+
+//     for (const c of candidates) {
+//       if (!c.text) continue;
+//       if (normalizedInput === c.text)
+//         return Array.isArray(c.answer) ? pickRandom(c.answer) : c.answer;
+//     }
+
+//     for (const c of candidates) {
+//       if (!c.text) continue;
+//       const re = new RegExp("\\b" + escapeRegExp(c.text) + "\\b", "i");
+//       if (re.test(normalizedInput))
+//         return Array.isArray(c.answer) ? pickRandom(c.answer) : c.answer;
+//     }
+
+//     for (const c of candidates) {
+//       if (!c.text || c.text.length < 3) continue;
+//       if (normalizedInput.includes(c.text))
+//         return Array.isArray(c.answer) ? pickRandom(c.answer) : c.answer;
+//     }
+
+//     const fallback = responses.find((r) => {
+//       if (Array.isArray(r.question))
+//         return r.question.map((q) => normalizeText(q)).includes("fallback");
+//       return normalizeText(r.question) === "fallback";
+//     });
+
+//     if (fallback)
+//       return Array.isArray(fallback.answer)
+//         ? pickRandom(fallback.answer)
+//         : fallback.answer;
+//     return "Hmm, I don’t have an answer for that yet!";
+//   }
+
+//   function pickRandom(arr) {
+//     return arr[Math.floor(Math.random() * arr.length)];
+//   }
+
+//   const handleSend = async (textParam = null) => {
+//     const messageText = (textParam !== null ? textParam : input).toString();
+//     if (!messageText.trim()) return;
+
+//     const userMsg = { from: "user", text: messageText };
+//     setMessages((prev) => [...prev, userMsg]);
+//     if (textParam === null) setInput("");
+//     setLoading(true);
+
+//     let reply = await getAIResponse(messageText);
+//     if (!reply) reply = getLocalResponse(messageText);
+
+//     const botMsg = { from: "bot", text: reply };
+//     setMessages((prev) => [...prev, botMsg]);
+//     setLoading(false);
+//   };
+
+//   return (
+//     <div className="w-full max-w-[400px] bg-[#112240] text-gray-200 rounded-2xl shadow-lg flex flex-col ml-auto">
+//       <div className="p-3 border-b border-gray-600 flex items-center justify-between sticky top-0 bg-[#112240] z-10">
+//         <span className="font-semibold text-gray-100">AI Portfolio Bot 🤖</span>
+//       </div>
+
+//       <div className="flex-1 p-4 overflow-y-auto space-y-2" style={{ height }}>
+//         {messages.map((msg, idx) => (
+//           <div
+//             key={idx}
+//             className={`flex ${
+//               msg.from === "user" ? "justify-end" : "justify-start"
+//             }`}
+//           >
+//             <div
+//               className={`px-4 py-2 rounded-2xl max-w-[75%] whitespace-pre-line ${
+//                 msg.from === "user"
+//                   ? "bg-pink-600 text-white"
+//                   : "bg-gray-700 text-gray-100"
+//               }`}
+//             >
+//               {msg.text}
+//             </div>
+//           </div>
+//         ))}
+
+//         {loading && (
+//           <div className="flex justify-start">
+//             <div className="px-4 py-2 rounded-2xl bg-gray-700 text-gray-400 italic animate-pulse">
+//               AI Portfolio Bot is typing...
+//             </div>
+//           </div>
+//         )}
+
+//         <div ref={messagesEndRef} />
+//       </div>
+
+//       <div className="p-3 border-t border-gray-600 flex space-x-2">
+//         <input
+//           type="text"
+//           value={input}
+//           onChange={(e) => setInput(e.target.value)}
+//           placeholder="Ask me about projects, skills, thesis, AI demo, or career questions 🚀"
+//           className="flex-1 px-3 py-2 rounded-lg bg-[#0a192f] text-gray-200 border border-gray-500 focus:outline-none"
+//           onKeyDown={(e) => e.key === "Enter" && handleSend()}
+//         />
+//         <button
+//           onClick={() => handleSend()}
+//           className="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-lg text-white font-semibold"
+//         >
+//           Send
+//         </button>
+//       </div>
+
+//       <div className="flex flex-wrap gap-2 mt-2 px-1 pb-2">
+//         {[
+//           "Projects",
+//           "Skills",
+//           "Thesis",
+//           "AI Demo",
+//           "Contact",
+//           "Tell me about yourself",
+//           "Strengths",
+//           "Weaknesses",
+//           "Future goals",
+//           "Why should we hire you",
+//         ].map((q) => (
+//           <button
+//             key={q}
+//             onClick={() => handleSend(q)}
+//             className="bg-gray-600 hover:bg-gray-700 text-white px-3 py-1 rounded-lg text-sm"
+//           >
+//             {q}
+//           </button>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Chatbot;
