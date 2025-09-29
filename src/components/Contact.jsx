@@ -20,7 +20,7 @@ const Contact = () => {
           This form is for demo purposes — to contact me, please use email at
           firstname.lastname@gmail.com
         </p> */}
-        <p className="text-gray-400 text-sm mb-2 text-center md:text-left mt-10">
+        <p className="text-gray-400 text-sm mb-2 text-center md:text-left mt-4">
           This form is for demo purposes — to contact me, please use email at
           firstname.lastname@gmail.com
         </p>
@@ -63,7 +63,8 @@ const Contact = () => {
         {/* <div className="w-full md:w-5/12 ml-auto">
           <Chatbot />
         </div> */}
-        <div className="w-full md:w-5/12 ml-auto mt-0 md:mt-0">
+        {/* <div className="w-full md:w-5/12 ml-auto mt-0 md:mt-0"> */}
+        <div className="w-full md:w-5/12">
           <div className="sticky top-28">
             {" "}
             {/* keeps the chatbot aligned when scrolling */}
