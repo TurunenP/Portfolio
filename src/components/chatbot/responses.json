@@ -1,0 +1,71 @@
+[
+  {
+    "question": ["hello", "hi", "hey"],
+    "answer": "Hi there! 👋 How can I help you today?"
+  },
+  {
+    "question": "portfolio",
+    "answer": "This portfolio showcases some of my projects and skills 🚀"
+  },
+  {
+    "question": "contact",
+    "answer": "You can reach me via the contact form or by email at firstname.lastname@gmail.com 📩"
+  },
+   {
+    "question": "ai demo",
+    "answer": "✨ You can try my AI portfolio chatbot here! It responds to questions about projects, skills, thesis, AI understanding, and contact info."
+  },
+  {
+    "question": "skills",
+    "answer": "My skills include React, React Native, Python, Java, security, cloud, UI/UX design among others and continuously learning AI integrations."
+  },
+  {
+    "question": "projects",
+    "answer": "I’ve built several projects including Fullstack web apps, phone apps, and this portfolio website itself, etc. and (team school projects) which aren't hosted anymore 🚀"
+  },
+  {
+    "question": "thesis",
+    "answer": "I built a full-stack Robotics Lab Inventory System for my thesis motivated by lack of it at the University of Oulu. It showcases CRUD operations, database design, and responsive UI. Tech stack: MERN"
+  },
+  {
+    "question": ["ai", "how do you understand ai", "ai fundamentals"],
+    "answer": "🤖 I have an understanding of AI fundamentals, including NLP, computer vision, and modern AI APIs. I’ve experimented with AI chatbots and AI integrations."
+  },
+   {
+  "question": ["tell me about yourself", "give me your elevator pitch"],
+  "answer": "👋 I’m a recent IT graduate with strong full-stack development skills. I’ve completed a year-long internship at a startup, worked on practical team school projects, and explored AI integrations. I love building meaningful and practical apps if given the chance!"
+},
+  {
+  "question": [
+    "why hire you",
+    "why should I hire you",
+    "why should we hire you",
+    "tell me why you should be hired",
+    "what sets you apart from others",
+    "why are you the right person",
+    "what makes you unique for this position",
+    "what sets you apart from other candidates"
+  ],
+  "answer": "🌟 As a recent IT graduate, I bring practical full-stack experience from a year-long internship, hands-on school projects, and AI experimentation. I adapt quickly, continuously learn, and am excited to contribute to meaningful and innovative projects."
+},
+  {
+     "question": ["strengths", "what are your strengths", "what are you best at", "what skill sets you apart"],
+    "answer": "💪 I'm adaptable, a quick learner, and able to take projects from concept to deployment. I excel at problem-solving in innovatiove solutions."
+  },
+  {
+    "question": ["weaknesses", "what's your biggest weakness", "areas you want to improve in", "what skills are you still learning"],
+    "answer": "⚠️ I’m still gaining industry experience, but I compensate by continuos learning, experimenting with projects, and continuously improving my skills."
+  },
+  {
+      "question": ["future goals", "Where do you see yourself in 5 years", "What are your career aspirations?"],
+    "answer": "🚀 I aim to become a full-stack developer with AI integration expertise, contributing to innovative projects in modern web and AI technologies."
+  },
+   {
+    "question": "fallback",
+    "answer": [
+      "🤔 Interesting question! I can answer about my projects, skills, thesis, AI demo, or contact info.",
+      "I’m still learning, but you can ask me about my portfolio projects, skills, thesis, or AI chatbot.",
+      "Good question! Try asking about my projects, skills, thesis, career aspirations."
+    ]
+  }
+]

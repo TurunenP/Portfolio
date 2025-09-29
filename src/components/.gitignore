@@ -1,2 +1,13 @@
+# Ignore 
+src/components/ChatbotTrial.jsx
+
+
+# Node modules
 /node_modules
+
+# Environment variables
 .env
+
+
+# Optional: build output for now
+/build
