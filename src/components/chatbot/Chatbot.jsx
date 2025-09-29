@@ -11,8 +11,8 @@ function normalizeText(text) {
   return text
     .toString()
     .toLowerCase()
-    .replace(/[^\w\s]/gi, "") // remove punctuation
-    .replace(/\s+/g, " ") // collapse whitespace
+    .replace(/[^\w\s]/gi, "")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
@@ -37,7 +37,7 @@ const Chatbot = () => {
     ]);
   }, []);
 
-  // Optional AI API call (kept but not required)
+  // Optional AI API call
   async function getAIResponse(prompt) {
     try {
       const res = await fetch(
@@ -224,7 +224,7 @@ const Chatbot = () => {
         ].map((q) => (
           <button
             key={q}
-            onClick={() => handleSend(q)} // send the button text directly
+            onClick={() => handleSend(q)}
             className="bg-gray-600 hover:bg-gray-700 text-white px-3 py-1 rounded-lg text-sm"
           >
             {q}
