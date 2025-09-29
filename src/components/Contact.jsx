@@ -1,5 +1,3 @@
-import React from "react";
-import Footer from "./Footer";
 import Chatbot from "./chatbot/Chatbot";
 
 const Contact = () => {
@@ -29,12 +27,13 @@ const Contact = () => {
       </div>
 
       {/* Flex container for form + chatbot */}
-      <div className="w-full max-w-[1200px] flex flex-col md:flex-row gap-8">
+      <div className="w-full max-w-[1200px] flex flex-col md:flex-row gap-4 justify-between items-start">
         {/* Contact Form */}
         <form
           method="POST"
           action="https://getform.io/f/e778bbdb-2c33-40b3-892a-b81df0c1d898"
-          className="flex flex-col w-full md:w-1/2"
+          // className="flex flex-col w-full md:w-1/2"
+          className="flex flex-col w-full md:w-6/12 md:ml-8"
         >
           <input
             className="bg-[#ccd6f6] p-2 mb-4"
@@ -60,8 +59,17 @@ const Contact = () => {
         </form>
 
         {/* Chatbot */}
-        <div className="w-full md:w-1/2">
+        {/* <div className="w-full md:w-1/2"> */}
+        {/* <div className="w-full md:w-5/12 ml-auto">
           <Chatbot />
+        </div> */}
+        <div className="w-full md:w-5/12 ml-auto mt-0 md:mt-0">
+          <div className="sticky top-28">
+            {" "}
+            {/* keeps the chatbot aligned when scrolling */}
+            <Chatbot height="500px" />{" "}
+            {/* pass custom height if Chatbot supports props */}
+          </div>
         </div>
       </div>
     </div>
