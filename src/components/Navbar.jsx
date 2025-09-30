@@ -13,8 +13,8 @@ const Navbar = ({ setActiveSection }) => {
   const handleClick = () => setNav(!nav);
 
   const handleNavClick = (section) => {
-    setActiveSection(section); // Update activeSection when clicked
-    setNav(false); // Close the mobile menu on click
+    setActiveSection(section);
+    setNav(false);
   };
 
   return (
