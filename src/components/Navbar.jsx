@@ -54,6 +54,7 @@ const Navbar = ({ setActiveSection }) => {
             to="skills"
             smooth={true}
             duration={500}
+            offset={-80}
             onClick={() => handleNavClick("skills")}
           >
             Skills

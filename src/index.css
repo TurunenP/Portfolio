@@ -33,3 +33,12 @@ body {
     )
      !important; 
 }
+
+
+/* Custom mobile adjustment for About section */
+@media (max-width: 640px) {
+    [name="about"] {
+        padding-bottom: 4rem;
+        /* extra bottom padding so Skills is fully pushed down */
+    }
+}
