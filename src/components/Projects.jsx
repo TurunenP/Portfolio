@@ -67,7 +67,6 @@ const Projects = () => {
                 </p>
               </div>
 
-              {/* Buttons - smaller and on the same line */}
               <div className="flex justify-between mt-4 w-full gap-2">
                 <a
                   href={project.demo}
